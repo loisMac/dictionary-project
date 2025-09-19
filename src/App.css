@@ -13,7 +13,7 @@
   margin: 30px 0;
 }
 
-/* Center the search bar */
+
 .search-container {
   display: flex;
   flex-direction: column;
@@ -22,24 +22,24 @@
   margin-top: 50px;
 }
 
-/* Input width */
+
 .search-container input.form-control {
   width: 300px;
   max-width: 90%;
 }
 
-/* Center search button and spacing */
+
 .search-container button.btn {
   margin-top: 10px;
 }
 
-/* Results container */
+
 .Results {
   max-width: 700px;
   margin: 30px auto;
 }
 
-/* Card shadow enhancement (optional) */
+
 .Meaning.card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
