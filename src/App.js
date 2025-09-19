@@ -1,6 +1,6 @@
 import logo from "./loomi.png";
 import './App.css';
-import Dictionary from "./Dictionary.js";
+import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
