@@ -1,0 +1,106 @@
+/* ----------------------- */
+/* RESULTS & MEANINGS STYLING */
+/* ----------------------- */
+
+.Results {
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out; /* fade-in for new search */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Word heading */
+  .Results h2 {
+    color: #97b6e5;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Phonetic */
+  .Results p.fst-italic {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Audio styling */
+  audio {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  audio:hover {
+    box-shadow: 0 4px 10px rgba(151,182,229,0.3);
+  }
+  
+  /* Meaning cards */
+  .Meaning.card.pastel-card {
+    border-radius: 20px;
+    background: #ffc2c2;
+    border: 2px solid #ff7da4;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Fade-in animation */
+  .Meaning.card.pastel-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hover effect for meaning cards */
+  .Meaning.card.pastel-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12),
+                0 0 25px rgba(151,182,229,0.15);
+    border-color: #97b6e5;
+  }
+  
+  /* Part of speech gradient text */
+  .Meaning h3 {
+    font-weight: 600;
+    background: linear-gradient(90deg, #97b6e5, #ffc2c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* ----------------------- */
+  /* SHOW MORE / SHOW LESS BUTTON */
+  /* ----------------------- */
+  
+  .btn-pastel.show-more {
+    background: linear-gradient(90deg, #97b6e5, #ffc2c2);
+    color: white;
+    border: 2px solid #ff7da4; /* always pink */
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+    transition: all 0.3s ease;
+    outline: none; /* remove default focus outline */
+  }
+  
+  /* Hover, focus, active states */
+  .btn-pastel.show-more:hover,
+  .btn-pastel.show-more:focus,
+  .btn-pastel.show-more:active {
+    background: linear-gradient(90deg, #ffc2c2, #97b6e5); /* reverse gradient */
+    border-color: #ff7da4; /* enforce pink border */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15),
+                0 0 20px rgba(151,182,229,0.4),
+                0 0 15px rgba(255,194,194,0.5);
+  }
+  

@@ -1,0 +1,98 @@
+/* ----------------------- */
+/* SEARCH BAR & FORM STYLING */
+/* ----------------------- */
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .search-container form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* ensures input and button same height */
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 50px;
+    background: rgba(255, 194, 194, 0.2); /* soft pastel pink background */
+    box-shadow: 0 4px 15px rgba(255, 194, 194, 0.35),
+                0 0 20px rgba(151, 182, 229, 0.3); /* soft pink + blue glow */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Glow on hover/focus */
+  .search-container form:hover,
+  .search-container input:focus,
+  .search-container button.btn-pastel:hover {
+    box-shadow: 0 6px 20px rgba(255, 194, 194, 0.5),
+                0 0 30px rgba(151, 182, 229, 0.4);
+  }
+  
+  /* Search input */
+  .search-container input {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    width: 300px;
+    max-width: 90%;
+    height: 45px;
+    padding: 0 20px;
+    border: 2px solid #ff7da4;
+    border-radius: 50px;
+    background: #ffc2c2;
+    color: #fff; /* input text color white */
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  /* Placeholder text color */
+  .search-container input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+  }
+  
+  /* Input focus state with soft glow animation */
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(151,182,229,0.3); }
+    50% { box-shadow: 0 0 15px rgba(151,182,229,0.5); }
+    100% { box-shadow: 0 0 5px rgba(151,182,229,0.3); }
+  }
+  
+  .search-container input:focus {
+    outline: none;
+    border-color: #97b6e5;
+    animation: glow 1.5s ease-in-out infinite;
+  }
+  
+  /* Search button styling */
+  .search-container button.btn-pastel {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px; /* same as input */
+    padding: 0 25px;
+    background: linear-gradient(90deg, #97b6e5, #ffc2c2);
+    color: white;
+    border: 2px solid #ff7da4;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button hover glow */
+  .search-container button.btn-pastel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15),
+                0 0 20px rgba(151,182,229,0.4),
+                0 0 15px rgba(255,194,194,0.5);
+    background: linear-gradient(90deg, #ffc2c2, #97b6e5);
+  }
+  

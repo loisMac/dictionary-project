@@ -12,3 +12,39 @@
   text-align: center;
   margin: 30px 0;
 }
+
+/* Center the search bar */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Input width */
+.search-container input.form-control {
+  width: 300px;
+  max-width: 90%;
+}
+
+/* Center search button and spacing */
+.search-container button.btn {
+  margin-top: 10px;
+}
+
+/* Results container */
+.Results {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+/* Card shadow enhancement (optional) */
+.Meaning.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Meaning.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
