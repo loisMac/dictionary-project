@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Meaning from "./Meaning";
-import "./Results.css"; 
+import "./Results.css";
 
 export default function Results({ results }) {
   const [showAll, setShowAll] = useState(false);
